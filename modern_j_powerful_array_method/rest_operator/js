@@ -1,0 +1,43 @@
+//bundle kore ak jaigai niye ashe
+
+
+
+//function
+function add(...numbers){
+
+console.log(numbers);
+let total=0;
+for(const num of numbers)
+{
+    total+= num;
+}
+return total;
+
+
+}
+console.log(add(1,2,3,4,5,6,100))  //this value created array numberss
+
+//obj
+const obj={
+    name: "miyad" ,
+    age: 22  ,
+    address:"dhaka"
+};
+const{name,...remaining}=obj;
+console.log(remaining);
+
+//array
+const array=[1,2,3,4,5,100,200];
+const [, ,  , ...rest]=array;
+console.log(rest);
+
+
+
+function something(one,...remaning){
+    console.log(one,...remaning);
+}
+console.log(something("hi",1,2,3,4,56));
+
+
+
+
