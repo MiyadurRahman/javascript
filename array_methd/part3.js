@@ -21,3 +21,17 @@ console.log(sort);
 
 let sortdesc=sorted.sort((a,b)=> b-a);
 console.log(sortdesc);
+
+
+//sorting usingprice
+let sortedproduct=products.sort((a,b)=> a.price-b.price);
+console.log(sortedproduct);
+
+
+
+let estimatedPrice=products
+.filter((p)=>p.inStock==true )
+.reduce((acc,current)=>{
+    return acc+=current.price;
+},0);
+console.log(estimatedPrice);
