@@ -28,7 +28,7 @@ console.log(remaining);
 
 //array
 const array=[1,2,3,4,5,100,200];
-const [, ,  , ...rest]=array;
+const [,,  , ...rest]=array;
 console.log(rest);
 
 
