@@ -9,7 +9,7 @@ console.log(`${index+1} --> ${fruits}`);
 
 
 
-})
+});
 
 
 //map ,returns
@@ -36,3 +36,4 @@ console.log(newfruits3);
 let newfruits4=fruits.filter((fruits)=>5<fruits.length);
 
 console.log(newfruits4);
+

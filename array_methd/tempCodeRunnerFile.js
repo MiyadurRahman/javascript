@@ -1,1 +1,1 @@
-
+let fruits=["Apple","Banna","mango "]
