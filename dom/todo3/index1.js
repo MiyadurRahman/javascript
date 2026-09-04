@@ -12,10 +12,7 @@ let tasklist=document.getElementById("tasklist");
 // console.log(addbtn1);
 
 
-//making button work
-addbtn.addEventListener("click",()=>{
-    console.log(taskInput.value);
-});
+
 // similarly
 taskInput.addEventListener("keydown",(event)=>{
 if(event.key ==="Enter"){
@@ -23,3 +20,21 @@ if(event.key ==="Enter"){
 }
 });
 
+
+
+// //create element
+// let li=document.createElement("li");
+// li.textContent="learn js";
+// console.log("li");
+// //tasklist er bitore to rakhte hobe mane ul er vitore
+// tasklist.appendChild(li);
+
+
+//input dewar maddome ad korbo
+addbtn.addEventListener("click",()=>{
+   let li=document.createElement("li");
+li.textContent=taskInput.value;
+console.log("li");
+//tasklist er bitore to rakhte hobe mane ul er vitore
+tasklist.appendChild(li);
+});
