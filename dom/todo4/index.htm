@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Todo App</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: start center;
+      padding-top: 31px;
+      background: #f7f6fb;
+      border-top: 6px solid #45283c;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .todo-card {
+      width: 204px;
+      min-height: 81px;
+      padding: 11px 12px 18px;
+      background: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.14);
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      color: #3e3e3e;
+      font-size: 17px;
+      line-height: 19px;
+      text-align: center;
+    }
+
+    form { display: flex; gap: 5px; }
+
+    input {
+      width: 145px;
+      height: 20px;
+      padding: 3px 5px;
+      border: 2px solid #777;
+      border-radius: 3px;
+      font-size: 8px;
+      outline: none;
+    }
+
+    input:focus { border-color: #4caf50; }
+
+    button {
+      width: 29px;
+      height: 21px;
+      padding: 0;
+      border: 0;
+      border-radius: 3px;
+      background: #43b85b;
+      color: white;
+      font-size: 8px;
+      cursor: pointer;
+    }
+    ul{
+      list-style: none;
+      margin-left:0px;
+    }
+
+    button:hover { background: #369c4b; }
+  </style>
+</head>
+<body>
+ <div class="todo-card">
+  <h1>My Todo App</h1>
+
+  <input id="taskinput" type="text" placeholder="Enter a task..." />
+  <button id="btn" type="button">Add</button>
+
+  <ul id="tasklist"></ul>
+</div>
+</body>
+<script src="index4.js"></script>
+</html>
