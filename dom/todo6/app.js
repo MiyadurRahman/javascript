@@ -35,6 +35,9 @@ function render() {
 
     let deletebtn = document.createElement("button");
     deletebtn.textContent = "NO";
+     deletebtn.addEventListener("click",()=>{
+      deletetask(task.id);
+    });
 
     // append buttons
     btnwrapper.appendChild(completebtn);
@@ -71,6 +74,12 @@ function complete(id){
   let task=tasks.find((task)=>task.id ==id);
   task.completed=!task.completed;
   render();
+}
+function deletetask(id){
+  //if false filter will remove that
+ tasks=tasks.filter((task)=> task.id != id);//over writing old array with new array
+
+render();
 }
 
 
