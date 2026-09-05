@@ -1,4 +1,6 @@
-// foreach,map
+// foreach--> check objects one by one donot return
+// 
+//,map
 
 //foreach ,from foreach we cannot return
 let fruits=["Apple","Banna","mango "]

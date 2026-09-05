@@ -1,0 +1,42 @@
+## Array
+
+- `push(item)` — adds an item to the end of an array.
+- `pop()` — removes the last item from an array.
+- `shift()` — removes the first item from an array.
+- `unshift(item)` — adds an item to the start of an array.
+- `forEach(fn)` — runs a function for every array item.
+- `map(fn)` — creates a new array by transforming each item.
+- `filter(fn)` — creates a new array with only items that pass a test.
+- `find(fn)` — returns the first item that matches a test.
+- `includes(value)` — checks if an array contains a value (true/false).
+- `join(separator)` — turns an array into a string.
+- `sort()` — sorts the array (changes the original array).
+- `reduce(fn, start)` — reduces an array to one single value.
+
+## Number / Math
+
+- `Number(value)` — converts something into a number.
+- `parseInt(text)` — converts text to an integer number.
+- `parseFloat(text)` — converts text to a decimal number.
+- `Math.round(n)` — rounds to the nearest integer.
+- `Math.floor(n)` — rounds down.
+- `Math.ceil(n)` — rounds up.
+- `Math.random()` — gives a random number from 0 to 1.
+
+## Object / JSON
+
+- `Object.keys(obj)` — gets all keys of an object as an array.
+- `Object.values(obj)` — gets all values of an object as an array.
+- `Object.entries(obj)` — gets key/value pairs as an array.
+- `JSON.stringify(obj)` — converts an object to a JSON string.
+- `JSON.parse(text)` — converts a JSON string to an object.
+
+## DOM (very common)
+
+- `document.getElementById(id)` — selects an element by its id.
+- `document.querySelector(css)` — selects the first element matching CSS selector.
+- `document.querySelectorAll(css)` — selects all matching elements (NodeList).
+- `addEventListener(event, fn)` — runs code when an event happens (like click).
+- `classList.add(name)` — adds a CSS class to an element.
+- `classList.remove(name)` — removes a CSS class from an element.
+- `classList.toggle(name)` — adds/removes a class depending on current state.
