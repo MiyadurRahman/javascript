@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Study Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px auto;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .results {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 4px;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Weekly Study Tracker</h2>
+    
+    <div class="input-group">
+        <input type="text" id="subjectName" placeholder="Subject Name (e.g. Physics)">
+        <input type="number" id="studyHours" placeholder="Study Hours (e.g. 5)" min="0" step="0.5">
+    </div>
+    
+    <button id="addStudyBtn">Add Study</button>
+
+    <div class="results">
+        <div><strong>Total Study Hours:</strong> <span id="totalHoursOut">0 hours</span></div>
+        <div><strong>Average Study Hours:</strong> <span id="averageHoursOut">0 hours</span></div>
+        <div><strong>Subjects Studied:</strong> <span id="subjectsOut">[]</span></div>
+        <div><strong>Feedback:</strong> <span id="feedbackOut">-</span></div>
+    </div>
+</div>
+
+<!-- Link to the external JavaScript file -->
+<script src="script.js"></script>
+</body>
+</html>
